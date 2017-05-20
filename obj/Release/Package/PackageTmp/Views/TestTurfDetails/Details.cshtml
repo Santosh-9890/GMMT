@@ -1,0 +1,114 @@
+﻿@model GMMT.Models.TurfDetails
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>TurfDetails</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TurfCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TurfCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TurfName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TurfName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TurfEmailId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TurfEmailId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Synopsis)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Synopsis)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MobileNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MobileNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneNo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneNo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dimensions)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dimensions)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AvailableFrom)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AvailableFrom)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AvailableTill)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AvailableTill)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DayCharges)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DayCharges)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NightCharges)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NightCharges)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.TurfId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

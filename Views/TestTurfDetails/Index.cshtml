@@ -1,0 +1,99 @@
+﻿@model IEnumerable<GMMT.Models.TurfDetails>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.TurfCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TurfName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TurfEmailId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Synopsis)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MobileNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dimensions)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AvailableFrom)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AvailableTill)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DayCharges)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NightCharges)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TurfCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TurfName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TurfEmailId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Synopsis)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MobileNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PhoneNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dimensions)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AvailableFrom)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AvailableTill)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DayCharges)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NightCharges)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.TurfId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.TurfId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.TurfId })
+        </td>
+    </tr>
+}
+
+</table>

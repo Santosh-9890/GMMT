@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="TurfDbContext-Web.config Connection String" description="TurfDbContext Connection String used in web.config by the application to access the database." defaultValue=" Server=tcp:testgmat.database.windows.net,1433;Initial Catalog=testgmat;Persist Security Info=False;User ID=testgmat;Password=test$1234;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Santosh\\documents\\visual\ studio\ 2015\\Projects\\GMMT\\GMMT\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TurfDbContext']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="DefaultConnection_ConnectionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Santosh\\documents\\visual\ studio\ 2015\\Projects\\GMMT\\GMMT\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

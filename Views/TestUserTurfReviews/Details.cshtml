@@ -1,0 +1,42 @@
+﻿@model GMMT.Models.UserTurfReview
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>UserTurfReview</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TurfCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TurfCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserEmailId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserEmailId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserReview)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserReview)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
